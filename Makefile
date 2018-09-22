@@ -14,7 +14,7 @@ endif
 # Versioning
 VER := $(shell git describe --tags)
 ifdef VER
-BUILD_VER =_CCIPHER_VERSION =\"$(VER)\"
+BUILD_VER =_CCIPHER_VERSION=\"$(VER)\"
 GCC_BUILD = -D$(BUILD_VER)
 endif
 
