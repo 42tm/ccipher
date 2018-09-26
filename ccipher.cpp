@@ -1,7 +1,7 @@
 // require C++11 or newer version
-#include "lib/atbash.hpp"
-#include "lib/caesar.hpp"
-#include "lib/vigenere.hpp"
+#include "lib/atbash.cpp"
+#include "lib/caesar.cpp"
+#include "lib/vigenere.cpp"
 
 #include <iostream>
 #include <string>

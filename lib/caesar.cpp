@@ -1,5 +1,6 @@
-#pragma once
+
 #include <string>
+
 std::string caesar (std::string plaintext, int shift = 13)
 {
     for (char &I : plaintext)
