@@ -1,6 +1,7 @@
-#pragma once
+
 #include <string>
 #include <cctype>
+
 std::string atbash (std::string in) 
 {   
     for (std::size_t a = 0 ; a < in.size() ; a++)
