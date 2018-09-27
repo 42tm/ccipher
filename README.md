@@ -7,7 +7,7 @@
 
 ## Build
 ### Requirements
-`ccipher` requires `cmake` and a C++17-compatible compiler to be available inside your `PATH` environment variable.
+`ccipher` requires `cmake` and a C++11-compatible compiler to be available inside your `PATH` environment variable.
   
   To test whether you have it : 
   - Fire up a terminal.
@@ -57,7 +57,7 @@ Now you should see an executable named `ccipher` inside your current directory
 
 ### Fulfilling requirements
 - CMake : download from [here)(https://cmake.org/download/).
-- C++-17 compatible compiler : 
+- C++-11 compatible compiler : 
   - On Windows, try Clang or MinGW-w64.
   - On GNU/Linux, try any compiler you want.
 
