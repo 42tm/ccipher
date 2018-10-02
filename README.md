@@ -56,7 +56,7 @@ Now you should see an executable named `ccipher` inside your current directory
 (or `ccipher.exe` in case you use Windows).
 
 ### Fulfilling requirements
-- CMake : download from [here)(https://cmake.org/download/).
+- CMake : download from [here](https://cmake.org/download/).
 - C++-11 compatible compiler : 
   - On Windows, try Clang or MinGW-w64.
   - On GNU/Linux, try any compiler you want.
