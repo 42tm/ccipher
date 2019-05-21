@@ -74,7 +74,7 @@ void printVersionInformation()
     // compiler attribution
     cout << "built with ";
     #ifdef __clang__
-        std::cout << "LLVM Clang " << __clang_version__ << std::endl;
+        std::cout << "LLVM Clang++ " << __clang_version__ << std::endl;
     #elif defined(__GNUC__)
         std::cout
             << "GNU C++ Compiler " << __GNUC__ << "." << __GNUC_MINOR__ << "." << __GNUC_PATCHLEVEL__;

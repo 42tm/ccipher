@@ -48,9 +48,32 @@
   - `git clone https://github.com/42tm/ccipher` beforehand, if necessary.
 - Make a directory there. Here I assume you used a directory called `build/`.
 - Change current directory to it.
-- Enter `cmake ..`.
-  - If `cmake` succeeds, type `make` if you have GNU `make` installed.
-  - Type `cmake --build` if you don't.
+- Enter the following commands:
+
+  ```bash
+  cmake .. # Create Makefile
+  ```
+
+  - There are 2 options to build:
+    - Release: `-O3`
+    ```
+    cmake -DCMAKE_BUILD_TYPE=Release ..
+    ```
+    - Debug: `-g`
+    ```
+    cmake -DCMAKE_BUILD_TYPE=Debug ..
+    ```
+
+> By default, when run `cmake ..` without specific build type, 
+> - If no build option was chosen in the past, cmake will try to build this repo 
+>   in Release
+> - Else cmake will select last build type
+
+- There should be build file for you after running CMake. Now run it:
+
+```
+cmake --build .
+```
 
 Now you should see an executable named `ccipher` inside your current directory
 (or `ccipher.exe` in case you use Windows).
@@ -58,7 +81,7 @@ Now you should see an executable named `ccipher` inside your current directory
 ### Fulfilling requirements
 - CMake : download from [here](https://cmake.org/download/).
 - C++-11 compatible compiler : 
-  - On Windows, try [Clang](http://releases.llvm.org/download.html) or [MinGW-w64](mingw-w64.org/doku.php/download).
+  - On Windows, try MSVC, [Clang](http://releases.llvm.org/download.html) or [MinGW-w64](mingw-w64.org/doku.php/download).
   - On GNU/Linux, try any compiler you want.
 
 ## License
