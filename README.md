@@ -81,7 +81,7 @@ Now you should see an executable named `ccipher` inside your current directory
 ### Fulfilling requirements
 - CMake : download from [here](https://cmake.org/download/).
 - C++-11 compatible compiler : 
-  - On Windows, try MSVC, Clang or MinGW-w64 GCC.
+  - On Windows, try MSVC, [Clang](http://releases.llvm.org/download.html) or [MinGW-w64](mingw-w64.org/doku.php/download).
   - On GNU/Linux, try any compiler you want.
 
 ## License
